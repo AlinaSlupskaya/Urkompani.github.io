@@ -3374,7 +3374,7 @@ nav {
   color: #FFBA2F;
 }
 
-.menu {
+.menu ul {
   padding: 0;
   margin: 0;
 }
@@ -3396,12 +3396,26 @@ nav {
 
 .menu li ul {
   display: none;
-  /*Прячем выпадающее меню*/
   position: absolute;
+  font-size: 0.729vw;
+  text-align: left;
+}
+
+.menu ul ul li {
+  padding-top: 15px;
+  padding-left: 30px;
 }
 
 .menu li > ul li ul {
   position: absolute;
+}
+
+.pointNav ul a:hover, .pointNav ul a:active {
+  color: #FFBA2F;
+}
+
+.menu ul ul > li:hover {
+  color: #FFBA2F;
 }
 
 .menu li a:hover {
@@ -3413,7 +3427,10 @@ nav {
 
 .menu li:hover > ul {
   display: block;
-  /*Показываем выпадающее меню при наведение*/
+}
+
+.menu li:hover > li {
+  display: block;
 }
 
 .infoNav {
